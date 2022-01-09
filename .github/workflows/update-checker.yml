@@ -12,8 +12,18 @@
 name: Update Checker
 
 env:
+
+  # Lean源码
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
+
+   # SSRP源码
+  REPO_URL_HelloWorld: https://github.com/fw876/helloworld
+  REPO_BRANCH_HelloWorld: master
+
+  # Passwall源码
+  REPO_URL_PassWall: https://github.com/xiaorouji/openwrt-passwall
+  REPO_BRANCH_PassWall: main
 
 on:
   workflow_dispatch:

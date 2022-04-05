@@ -66,6 +66,7 @@ jobs:
         chmod +x $DIY_P1_SH
         cd openwrt
         echo "src-git pasw https://github.com/xiaorouji/openwrt-passwall.git" >> ./feeds.conf.default
+        echo "src-git pasw2 https://github.com/xiaorouji/openwrt-passwall2/tree/main/luci-app-passwall2.git" >> ./feeds.conf.default
         $GITHUB_WORKSPACE/$DIY_P1_SH
         
     - name: Update feeds
